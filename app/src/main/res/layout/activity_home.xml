@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/drawer">
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+       <!-- <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolba"
+        android:layout_height="100px"
+        android:layout_width="match_parent" />-->
+        <FrameLayout
+            android:id="@+id/home_container"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/bottom_nav"
+            app:menu="@menu/bottom_nav"
+            android:background="#87ceeb"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/unauthorized_user"
+        android:visibility="visible"
+
+        app:menu="@menu/unauthorized_navbar_menu"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/authorized_user"
+        android:visibility="gone"
+        app:menu="@menu/authorized_navbar_menu"/>
+
+
+
+
+
+<!--</LinearLayout>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

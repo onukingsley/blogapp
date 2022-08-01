@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547274088833",
+    "project_id": "com-example-noxblog",
+    "storage_bucket": "com-example-noxblog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547274088833:android:f481eb8f04ab2f49334880",
+        "android_client_info": {
+          "package_name": "com.example.nox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547274088833-ru3uqod6tcgi8b7bm93akc74jpm5d2j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASu0Mjg75d-eNgH99O9L5tdtd1bx2N4n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547274088833-ru3uqod6tcgi8b7bm93akc74jpm5d2j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

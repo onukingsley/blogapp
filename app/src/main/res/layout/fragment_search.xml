@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/ghostwhite"
+            android:gravity="center_vertical"
+            android:id="@+id/tool"
+            app:menu="@menu/authorized_navbar_menu"
+            android:layout_height="70dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/search"
+
+                    style="bold"
+                    android:textSize="17dp"/>
+
+                <androidx.appcompat.widget.SearchView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginStart="50dp"
+                    android:id="@+id/searchme"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/search_userprofile"
+                android:layout_height="match_parent"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_posts"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

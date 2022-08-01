@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ghostwhite"
+    android:gravity="center_vertical"
+    app:menu="@menu/authorized_navbar_menu"
+    android:layout_height="150px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/search"
+
+            style="bold"
+            android:textSize="17dp"/>
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_marginStart="50dp"
+            android:id="@+id/searchme"
+            android:gravity="center"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
